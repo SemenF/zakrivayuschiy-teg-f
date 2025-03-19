@@ -11,6 +11,107 @@
 */
 
 .page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font), sans-serif;
+  font-variation-settings: 'wght' var(--text-weight);
+  background-image: var(--background-image);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.page-width {
+  inline-size: var(--main-width);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--background-color);
+  border: var(--main-border);
+  margin-block: 100px;
+  padding-block: clamp(7.5rem, 0.714vw + 7.357rem, 8rem);
+}
+
+.header__title, .header__subtitle {
+  font-family: var(--accent-font), 'Fantasy', sans-serif;
+  color: var(--main-color);
+}
+
+.header__title {
+  font-size: clamp(3.0625rem, 2.7768rem + 1.4286vw, 4.0625rem);
+}
+
+.header__subtitle {
+  font-size: clamp(0.875rem, 0.7143rem + 0.8036vw, 1.4375rem);
+  text-transform: uppercase;
+}
+
+.main__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__content-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 51px;
+  margin-block-end: 50px;
+}
+
+.main__content-list:not(:last-child) {
+  gap: 50px;
+}
+
+.main__content-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  border: var(--main-border);
+}
+
+.card__title {
+  font-variation-settings: 'wght' var(--title-weight);
+  font-family: var(--main-font), sans-serif;
+  font-size: var(--main-font-size);
+  line-height: 21.78px;
+  color: var(--main-color);
+  padding-inline: 10px;
+  padding-block-start: 4px;
+  padding-block-end: 5px;
+}
+
+.card__image {
+  inline-size: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1 / 1;
+  display: block;
+}
+
+.card__image-block {
+  position: relative;
+  overflow: hidden;
+  border-block-start: var(--main-border);
+  border-block-end: var(--main-border);
+}
+
+.card__image-label {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  font-size: 14px;
+  font-family: var(--accent-font), 'Fantasy', sans-serif;
+  color: var(--main-color);
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+  text-shadow: -1px 0 var(--background-color), 0 1px var(--background-color), 1px 0 var(--background-color), 0 -1px var(--background-color);
 }
