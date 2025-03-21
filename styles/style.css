@@ -304,26 +304,3 @@ dialog::backdrop {
 .sparks {
   opacity: 0;
 }
-
-.card__like-button:focus,
-.main-content__button:focus,
-.card__icon-button:focus {
-  outline: none;
-}
-
-.card__like-button:focus-visible,
-.main-content__button:focus-visible {
-  outline: none;
-  box-shadow: 2px 2px 0 var(--main-color);
-}
-
-.card__icon-button:focus-visible {
-  border: var(--main-border);
-}
-
-.button-like-text {
-  position: relative;
-  z-index: 1;
-  mix-blend-mode: difference;
-  color: var(--background-color);
-}
