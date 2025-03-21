@@ -52,7 +52,7 @@
         <li class="main__content-card">
           <h2 class="card__title">1 спринт: Я — чистый лист</h2>
           <div class="card__image-block">
-            <img class="card__image" src="./images/picture2.jpg" alt="горы отражающиеся в воде">
+            <img class="card__image filter_grayscale" src="./images/picture2.jpg" alt="горы отражающиеся в воде">
             <span class="card__image-label">&lt;первые сложности&gt;</span>
           </div>
           <div class="card__paragraph">
@@ -79,7 +79,7 @@
         <li class="main__content-card">
           <h2 class="card__title">1 спринт: А если не получится?</h2>
           <div class="card__image-block">
-            <img class="card__image" src="./images/picture3.jpg" alt="маленькая обезъянка">
+            <img class="card__image filter_saturate" src="./images/picture3.jpg" alt="маленькая обезъянка">
             <span class="card__image-label">&lt;не останавливайся&gt;</span>
           </div>
           <div class="card__paragraph">
@@ -106,7 +106,7 @@
         <li class="main__content-card">
           <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
           <div class="card__image-block">
-            <img class="card__image" src="./images/picture4.jpg" alt="одинокая ель в заснеженном поле">
+            <img class="card__image filter_contrast" src="./images/picture4.jpg" alt="одинокая ель в заснеженном поле">
             <span class="card__image-label">&lt;совершенство&gt;</span>
           </div>
           <div class="card__paragraph">
@@ -133,7 +133,7 @@
         <li class="main__content-card">
           <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
           <div class="card__image-block">
-            <img class="card__image" src="./images/picture5.jpg" alt="пейзаж снежных гор">
+            <img class="card__image filter_invert" src="./images/picture5.jpg" alt="пейзаж снежных гор">
             <span class="card__image-label">&lt;не просто&gt;</span>
           </div>
           <div class="card__paragraph">
@@ -160,7 +160,7 @@
         <li class="main__content-card">
           <h2 class="card__title">3 спринт: Обходные стратегии</h2>
           <div class="card__image-block">
-            <img class="card__image" src="./images/picture6.jpg" alt="маленькая медуза">
+            <img class="card__image filter_sepia" src="./images/picture6.jpg" alt="маленькая медуза">
             <span class="card__image-label">&lt;выход есть&gt;</span>
           </div>
           <div class="card__paragraph">
@@ -187,7 +187,7 @@
         <li class="main__content-card">
           <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
           <div class="card__image-block">
-            <img class="card__image" src="./images/picture7.jpg" alt="улица со столбом(много проводов) и красных фонариков">
+            <img class="card__image filter_saturate-blur" src="./images/picture7.jpg" alt="улица со столбом(много проводов) и красных фонариков">
             <span class="card__image-label">&lt;время&gt;</span>
           </div>
           <div class="card__paragraph">
@@ -214,7 +214,7 @@
         <li class="main__content-card">
           <h2 class="card__title">«Сейчас я здесь»</h2>
           <div class="card__image-block">
-            <img class="card__image" src="./images/picture8.jpg" alt="вид вверх из ущелья">
+            <img class="card__image filter_contrast-blur" src="./images/picture8.jpg" alt="вид вверх из ущелья">
             <span class="card__image-label">&lt;ученье свет&gt;</span>
           </div>
           <div class="card__paragraph">
@@ -241,14 +241,14 @@
 
       <button class="main-content__button button__with-text button__covered" type="button" onclick="window['dialog'].showModal()" >
         <svg viewBox="0 0 40 40" class="floppy__icon">
-          <use href="./svg/floppy.svg#floppydisk" />
+          <use href="./svg/floppy.svg#floppy" />
         </svg>
         <span class="floppy__text button__text">Сохранить на память</span>
       </button>
 
       <dialog class="floppy__dialog" id="dialog">
         <svg viewBox="0 0 40 40" class="floppy__icon-dialog">
-          <use href="./svg/floppy.svg#floppydisk" />
+          <use href="./svg/floppy.svg#floppy" />
         </svg>
         <p class="floppy__dialog-text">Вставьте дискету, чтобы продолжить</p>
         <button class="floppy__dialog-button button__with-text button__text" type="button" onclick="window['dialog'].close()">ОК</button>
