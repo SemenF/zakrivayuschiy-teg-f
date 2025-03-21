@@ -17,7 +17,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: 'wght' var(--text-weight);
+  font-variation-settings: "wght" var(--text-weight);
   background-image: var(--background-image);
   background-size: cover;
   background-attachment: fixed;
@@ -78,7 +78,7 @@
 }
 
 .card__title {
-  font-variation-settings: 'wght' var(--title-weight);
+  font-variation-settings: "wght" var(--title-weight);
   font-family: var(--main-font), sans-serif;
   font-size: var(--main-font-size);
   line-height: 21.78px;
@@ -112,7 +112,8 @@
   color: var(--main-color);
   mix-blend-mode: hard-light;
   opacity: 0.5;
-  text-shadow: -1px 0 var(--background-color), 0 1px var(--background-color), 1px 0 var(--background-color), 0 -1px var(--background-color);
+  text-shadow: -1px 0 var(--background-color), 0 1px var(--background-color),
+    1px 0 var(--background-color), 0 -1px var(--background-color);
 }
 
 @supports (-webkit-text-stroke: 1px var(--background-color)) {
@@ -171,9 +172,9 @@
 .button__covered {
   transition: box-shadow 0.3s ease;
 }
-  
+
 .button__covered::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   scale: 0 1;
@@ -250,38 +251,41 @@ dialog::backdrop {
 }
 
 .filter_grayscale {
-filter: grayscale(0.8);
+  filter: grayscale(0.8);
 }
 
 .filter_saturate {
-filter: saturate(158%);
+  filter: saturate(158%);
 }
 
 .filter_sepia {
-filter: sepia(50%);
+  filter: sepia(50%);
 }
 
 .filter_invert {
-filter: invert(0.7);
+  filter: invert(0.7);
 }
 
 .filter_contrast {
-filter: contrast(50%);
+  filter: contrast(50%);
 }
 
 .filter_saturate-blur {
-filter: saturate(200%) blur(0.1rem);
+  filter: saturate(200%) blur(0.1rem);
 }
 
 .filter_contrast-blur {
-filter: contrast(150%) blur(0.1rem);
+  filter: contrast(150%) blur(0.1rem);
 }
 
-.card__like-button:focus, .main-content__button:focus, .card__icon-button:focus {
+.card__like-button:focus,
+.main-content__button:focus,
+.card__icon-button:focus {
   outline: none;
 }
 
-.card__like-button:focus-visible, .main-content__button:focus-visible {
+.card__like-button:focus-visible,
+.main-content__button:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 var(--main-color);
 }
@@ -301,11 +305,14 @@ filter: contrast(150%) blur(0.1rem);
   opacity: 0;
 }
 
-.card__like-button:focus, .main-content__button:focus, .card__icon-button:focus {
+.card__like-button:focus,
+.main-content__button:focus,
+.card__icon-button:focus {
   outline: none;
 }
 
-.card__like-button:focus-visible, .main-content__button:focus-visible {
+.card__like-button:focus-visible,
+.main-content__button:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 var(--main-color);
 }
