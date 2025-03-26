@@ -292,6 +292,7 @@ dialog::backdrop {
 
 .card__icon-button:focus-visible {
   outline: none;
+  border: 2px solid var(--main-color);
   border: var(--main-border);
 }
 
@@ -304,6 +305,56 @@ dialog::backdrop {
 
 .sparks {
   opacity: 0;
+}
+
+.core {
+  fill: transparent;
+  transition-delay: 0.03s;
+  transition-duration: 0.3s;
+}
+
+.main-body {
+  fill: transparent;
+  transition-duration: 0.3s;
+}
+
+.contour {
+  transition: fill 0.1s linear;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--main-color);
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--main-color);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.card__icon-button:active .core {
+  fill: var(--accent-color);
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--accent-color);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--accent-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--accent-color);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--accent-color);
+  transition: fill 0.3s 0.06s linear;
 }
 
 @media (width <= 375px) {
