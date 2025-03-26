@@ -213,6 +213,9 @@
 }
 
 .floppy__icon {
+  position: relative;
+  z-index: 1;
+  inline-size: 21px;
   block-size: 21px;
   mix-blend-mode: difference;
   color: var(--background-color);
@@ -278,19 +281,17 @@ dialog::backdrop {
   filter: contrast(150%) blur(0.1rem);
 }
 
-.card__like-button:focus,
-.main-content__button:focus,
-.card__icon-button:focus {
+.button:focus {
   outline: none;
 }
 
-.card__like-button:focus-visible,
-.main-content__button:focus-visible {
+.button:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 var(--main-color);
 }
 
 .card__icon-button:focus-visible {
+  outline: none;
   border: var(--main-border);
 }
 
@@ -303,4 +304,28 @@ dialog::backdrop {
 
 .sparks {
   opacity: 0;
+}
+
+@media (width <= 375px) {
+  .main-content__button {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 20.5px 15px 20.5px;
+  }
+
+  .floppy__icon {
+    inline-size: 28px;
+    block-size: 28px;
+  }
+
+  .floppy__dialog[open] {
+    inline-size: min(100%, 341px);
+    padding-inline: 38px;
+  }
+
+  .card__image-label {
+    top: 22px;
+    right: 12px;
+  }
 }
