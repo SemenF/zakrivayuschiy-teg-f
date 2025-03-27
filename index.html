@@ -44,7 +44,7 @@
             </p>
           </div>
           <div class="card__buttons">
-            <button class="button card__icon-button" type="button">
+            <button class="card__icon-button" type="button">
               <svg
                 class="like-icon"
                 aria-hidden="true"
@@ -79,10 +79,10 @@
               </svg>
             </button>
             <button
-              class="button card__like-button button__with-text button__covered"
+              class="button card__like-button"
               type="button"
             >
-              <span class="button-like-text button__text">Like</span>
+              <span class="button__text">Like</span>
             </button>
           </div>
         </li>
@@ -112,7 +112,7 @@
             </p>
           </div>
           <div class="card__buttons">
-            <button class="button card__icon-button" type="button">
+            <button class="card__icon-button" type="button">
               <svg
                 class="like-icon"
                 aria-hidden="true"
@@ -147,10 +147,10 @@
               </svg>
             </button>
             <button
-              class="button card__like-button button__with-text button__covered"
+              class="button card__like-button"
               type="button"
             >
-              <span class="button-like-text button__text">Like</span>
+              <span class="button__text">Like</span>
             </button>
           </div>
         </li>
@@ -178,7 +178,7 @@
             </p>
           </div>
           <div class="card__buttons">
-            <button class="button card__icon-button" type="button">
+            <button class="card__icon-button" type="button">
               <svg
                 class="like-icon"
                 aria-hidden="true"
@@ -213,10 +213,10 @@
               </svg>
             </button>
             <button
-              class="button card__like-button button__with-text button__covered"
+              class="button card__like-button"
               type="button"
             >
-              <span class="button-like-text button__text">Like</span>
+              <span class="button__text">Like</span>
             </button>
           </div>
         </li>
@@ -241,7 +241,7 @@
             <p class="card__text">Работа Работа Работа</p>
           </div>
           <div class="card__buttons">
-            <button class="button card__icon-button" type="button">
+            <button class="card__icon-button" type="button">
               <svg
                 class="like-icon"
                 aria-hidden="true"
@@ -276,10 +276,10 @@
               </svg>
             </button>
             <button
-              class="button card__like-button button__with-text button__covered"
+              class="button card__like-button"
               type="button"
             >
-              <span class="button-like-text button__text">Like</span>
+              <span class="button__text">Like</span>
             </button>
           </div>
         </li>
@@ -309,7 +309,7 @@
             </p>
           </div>
           <div class="card__buttons">
-            <button class="button card__icon-button" type="button">
+            <button class="card__icon-button" type="button">
               <svg
                 class="like-icon"
                 aria-hidden="true"
@@ -373,7 +373,7 @@
             </p>
           </div>
           <div class="card__buttons">
-            <button class="button card__icon-button" type="button">
+            <button class="card__icon-button" type="button">
               <svg
                 class="like-icon"
                 aria-hidden="true"
@@ -408,10 +408,10 @@
               </svg>
             </button>
             <button
-              class="button card__like-button button__with-text button__covered"
+              class="button card__like-button"
               type="button"
             >
-              <span class="button-like-text button__text">Like</span>
+              <span class="button__text">Like</span>
             </button>
           </div>
         </li>
@@ -439,7 +439,7 @@
             </p>
           </div>
           <div class="card__buttons">
-            <button class="button card__icon-button" type="button">
+            <button class="card__icon-button" type="button">
               <svg
                 class="like-icon"
                 aria-hidden="true"
@@ -474,10 +474,10 @@
               </svg>
             </button>
             <button
-              class="button card__like-button button__with-text button__covered"
+              class="button card__like-button"
               type="button"
             >
-              <span class="button-like-text button__text">Like</span>
+              <span class="button__text">Like</span>
             </button>
           </div>
         </li>
@@ -505,7 +505,7 @@
             </p>
           </div>
           <div class="card__buttons">
-            <button class="button card__icon-button" type="button">
+            <button class="card__icon-button" type="button">
               <svg
                 class="like-icon"
                 aria-hidden="true"
@@ -540,35 +540,37 @@
               </svg>
             </button>
             <button
-              class="button card__like-button button__with-text button__covered"
+              class="button card__like-button"
               type="button"
             >
-              <span class="button-like-text button__text">Like</span>
+              <span class="button__text">Like</span>
             </button>
           </div>
         </li>
       </ul>
       <button
-        class="button main-content__button button__with-text button__covered"
-        type="button"
+        class="button main-content__button"
+        type="submit"
         onclick="window['dialog'].showModal()"
       >
-        <svg viewBox="0 0 40 40" class="floppy__icon">
+        <svg viewBox="0 0 40 40" class="floppy__icon floppy-animation">
           <use href="./svg/floppy.svg#floppy" />
         </svg>
-        <span class="floppy__text button__text">Сохранить на память</span>
+        <span class="button__text">Сохранить на память</span>
       </button>
       <dialog class="floppy__dialog" id="dialog">
-        <svg viewBox="0 0 40 40" class="floppy__icon-dialog">
+        <div class="dialog__container">
+         <svg viewBox="0 0 40 40" class="floppy__icon-dialog">
           <use href="./svg/floppy.svg#floppy" />
-        </svg>
-        <p class="floppy__dialog-text">Вставьте дискету, чтобы продолжить</p>
+         </svg>
+         <p">Вставьте дискету, чтобы продолжить</p>
+       </div>
         <button
-          class="floppy__dialog-button button__with-text button__text"
+          class="button floppy__dialog-button"
           type="button"
           onclick="window['dialog'].close()"
         >
-          ОК
+        <span class="button__text">ОК</span>
         </button>
       </dialog>
     </main>
